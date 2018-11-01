@@ -6,6 +6,9 @@ define(["Global"], function (Global) {
     return {
         init: function () {
             Global.startViewer();
+        },
+        getViewer: function(){
+            return Global.viewer;
         }
     }
 });
