@@ -19,6 +19,9 @@
             "}));"
     },
     paths: {
-        Global: "src/Global"
+        Global: "src/Global",
+        ImageryAssistant: "src/ImageryAssistant",
+        TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
+        Failure: "node_modules/jean-failure/src/Failure"
     }
 })

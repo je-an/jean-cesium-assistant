@@ -1,7 +1,8 @@
 define([
 
-], function () {
-    'use strict';
+], function (
+    
+) {
     return {
         viewer: null,
         startViewer: function () {
