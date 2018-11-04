@@ -21,7 +21,7 @@ define([
              * @param {Object} options - options object
              * @param {ImageryAssistant.type} options.type - type of the imagery
              * @param {String} options.url - url of the pro
-             * @param {String} options.layers - name of the layers
+             * @param {String} options.layerName - name of the layers
              */
             _createImagery: function (options) {
                 var result;
@@ -29,7 +29,7 @@ define([
                     case this.imageryType.WMS:
                         result = new Cesium.WebMapServiceImageryProvider({
                             url: options.url,
-                            layers: options.layers,
+                            layers: options.layerName,
                         });
                         break;
                 }
@@ -53,7 +53,7 @@ define([
              * @param {Object} imagery - options object
              * @param {ImageryAssistant.type} imagery.type - type of the imagery
              * @param {String} imagery.url - url of the pro
-             * @param {String} imagery.layers - name of the layers
+             * @param {String} imagery.layerName - name of the layers
              */
             add: function (imagery) {
                 var provider = this._createImagery(imagery);
