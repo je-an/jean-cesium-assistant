@@ -391,6 +391,14 @@ define('ImageryAssistant',[
                         result = new Cesium.WebMapServiceImageryProvider({
                             url: options.url,
                             layers: options.layerName,
+                            tileWidth: 256,
+                            tileHeight: 256,
+                            minimumLevel: 0,
+                            maximumLevel: undefined,
+                            parameters: {
+                                transparent: 'true',
+                                format: 'image/png'
+                            }
                         });
                         break;
                 }
