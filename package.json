@@ -19,6 +19,6 @@
     "url": "https://github.com/je-an/jean-cesium-assistant.git"
   },
   "devDependencies": {
-    "cesium": "^1.50.0"
+    "cesium": "^1.51.0"
   }
 }
