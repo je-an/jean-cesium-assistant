@@ -460,13 +460,10 @@ define('src/CesiumAssistant',[
      * @alias CesiumAssistant 
      */
     return {
-        /** @enum */
-        assistantType: {
-            IMAGERY: 0
-        },
         init: function (url) {
             Global.startViewer();
             ImageryAssistant.init(url);
+            CameraAssistant.init();
         },
         getViewer: function () {
             return Global.viewer;

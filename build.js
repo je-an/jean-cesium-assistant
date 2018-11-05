@@ -21,6 +21,7 @@
     paths: {
         Global: "src/Global",
         ImageryAssistant: "src/ImageryAssistant",
+        CameraAssistant: "src/CameraAssistant",
         TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
         Failure: "node_modules/jean-failure/src/Failure"
     }

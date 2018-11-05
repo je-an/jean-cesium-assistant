@@ -5,7 +5,7 @@ define([
 ) {
     return {
         viewer: null,
-        startViewer: function () {
+        init: function () {
             this.viewer = new Cesium.Viewer('cesium-container', {
                 imageryProvider: false,
                 animation: false,
