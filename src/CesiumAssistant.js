@@ -20,6 +20,7 @@ define([
             getViewer: function () {
                 return Global.viewer;
             },
-            Imagery: ImageryAssistant
+            Imagery: ImageryAssistant,
+            Camera: CameraAssistant
         };
     });
