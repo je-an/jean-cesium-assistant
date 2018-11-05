@@ -12,7 +12,7 @@ define([
 
         },
         /**
-         * @param {Number} flyTime - the time which are
+         * @param {Number} flyTime - the time for camera movement in seconds
          * @param {Object} bounding - bounding object
          * @param {Number} bounding.northLatitude - the north bound
          * @param {Number} bounding.eastLongitude - the east bound
@@ -31,7 +31,7 @@ define([
             westLongitude = bounding.westLongitude > westLongitude ? bounding.westLongitude : westLongitude;
             eastLongitude = bounding.eastLongitude < eastLongitude ? bounding.eastLongitude : eastLongitude;
             southLatitude = bounding.southLatitude > southLatitude ? bounding.southLatitude : southLatitude;
-            northLatitude = bounding.northLatitude > northLatitude ? bounding.northLatitude : northLatitude;
+            northLatitude = bounding.northLatitude < northLatitude ? bounding.northLatitude : northLatitude;
 
             Global.viewer.camera.flyTo({
                 destination: Cesium.Rectangle.fromDegrees(westLongitude, southLatitude, eastLongitude, northLatitude),
