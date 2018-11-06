@@ -1,11 +1,13 @@
 define([
     "Global",
     "ImageryAssistant",
-    "CameraAssistant"
+    "CameraAssistant",
+    "TerrainAssistant"
 ], function (
     Global,
     ImageryAssistant,
-    CameraAssistant
+    CameraAssistant,
+    TerrainAssistant
 ) {
         /**
          * Provides helper functionality for Cesium.js 
@@ -16,11 +18,13 @@ define([
                 Global.init();
                 ImageryAssistant.init(url);
                 CameraAssistant.init(url);
+                TerrainAssistant.init(url);
             },
             getViewer: function () {
                 return Global.viewer;
             },
             Imagery: ImageryAssistant,
-            Camera: CameraAssistant
+            Camera: CameraAssistant,
+            Terrain: TerrainAssistant
         };
     });

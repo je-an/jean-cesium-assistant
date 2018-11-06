@@ -16,4 +16,8 @@ require(["CesiumAssistant", "css!bootstrap"], function (CesiumAssistant) {
         southLatitude: 47.27012252807623,
         northLatitude: 55.05652618408203
     });
+    CesiumAssistant.Terrain.add({
+        url: "http://localhost:8080/geoserver/gwc/service/wms",
+        layer: "Terrain:Terrain"
+    });
 });

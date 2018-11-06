@@ -22,6 +22,7 @@
         Global: "src/Global",
         ImageryAssistant: "src/ImageryAssistant",
         CameraAssistant: "src/CameraAssistant",
+        TerrainAssistant: "src/TerrainAssistant",
         TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
         Failure: "node_modules/jean-failure/src/Failure"
     }
