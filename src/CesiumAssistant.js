@@ -15,7 +15,7 @@ define([
          */
         return {
             init: function (url) {
-                Global.init();
+                Global.init(url);
                 ImageryAssistant.init(url);
                 CameraAssistant.init(url);
                 TerrainAssistant.init(url);

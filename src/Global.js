@@ -5,7 +5,8 @@ define([
 ) {
     return {
         viewer: null,
-        init: function () {
+        init: function (url) {
+            window.CESIUM_BASE_URL = url;
             this.viewer = new Cesium.Viewer('cesium-container', {
                 imageryProvider: false,
                 animation: false,
