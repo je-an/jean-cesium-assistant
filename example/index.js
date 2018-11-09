@@ -20,4 +20,6 @@ require(["CesiumAssistant", "css!bootstrap"], function (CesiumAssistant) {
         url: "http://localhost:8080/geoserver/gwc/service/wms",
         layer: "Terrain:Terrain"
     });
+    CesiumAssistant.Imagery.hide("Base:Blue_Marble");
+    CesiumAssistant.Imagery.show("Base:Blue_Marble");
 });

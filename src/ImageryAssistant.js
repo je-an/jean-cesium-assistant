@@ -87,6 +87,26 @@ define([
                         i--;
                     }
                 }
+            },
+            /** @param {String} name - name of the imagery */
+            show: function (name) {
+                var imageryLayers = this._imageryLayers, i, l;
+                for (i = 0; i < imageryLayers.length; i++) {
+                    l = imageryLayers.get(i);
+                    if (l.imageryProvider.layers === name) {
+                        l.show = true;
+                    }
+                }
+            },
+            /** @param {String} name - name of the imagery */
+            hide: function (name) {
+                var imageryLayers = this._imageryLayers, i, l;
+                for (i = 0; i < imageryLayers.length; i++) {
+                    l = imageryLayers.get(i);
+                    if (l.imageryProvider.layers === name) {
+                        l.show = false;
+                    }
+                }
             }
         }
     });
