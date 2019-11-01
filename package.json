@@ -1,6 +1,6 @@
 {
   "name": "jean-cesium-assistant",
-  "version": "1.4.1",
+  "version": "1.5.5",
   "description": "Provides helper functionality for Cesium.js",
   "main": "dist/jean-cesium-assistant.js",
   "scripts": {

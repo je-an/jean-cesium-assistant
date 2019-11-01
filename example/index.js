@@ -22,4 +22,6 @@ require(["CesiumAssistant", "css!bootstrap"], function (CesiumAssistant) {
     });
     CesiumAssistant.Imagery.hide("Base:Blue_Marble");
     CesiumAssistant.Imagery.show("Base:Blue_Marble");
+
+    CesiumAssistant.Geometry.drawPolylineGeometry([{ latitude: 47, longitude: 19, altitude: 10000 }, { latitude: 52, longitude: 21, altitude: 10000 }]);
 });

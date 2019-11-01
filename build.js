@@ -23,6 +23,8 @@
         ImageryAssistant: "src/ImageryAssistant",
         CameraAssistant: "src/CameraAssistant",
         TerrainAssistant: "src/TerrainAssistant",
+        GeometryAssistant: "src/GeometryAssistant",
+        GeometryUtil: "src/GeometryUtil",
         TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
         Failure: "node_modules/jean-failure/src/Failure"
     }
