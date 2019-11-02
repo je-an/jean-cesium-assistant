@@ -3,13 +3,15 @@ define([
     "ImageryAssistant",
     "CameraAssistant",
     "TerrainAssistant",
-    "GeometryAssistant"
+    "GeometryAssistant",
+    "ClockAssistant"
 ], function (
     Global,
     ImageryAssistant,
     CameraAssistant,
     TerrainAssistant,
-    GeometryAssistant
+    GeometryAssistant,
+    ClockAssistant
 ) {
     /**
      * Provides helper functionality for Cesium.js 
@@ -21,7 +23,8 @@ define([
             ImageryAssistant.init(url);
             CameraAssistant.init(url);
             TerrainAssistant.init(url);
-            GeometryAssistant.init(url);  
+            GeometryAssistant.init(url);
+            ClockAssistant.init(url);
         },
         getViewer: function () {
             return Global.viewer;
@@ -29,6 +32,7 @@ define([
         Imagery: ImageryAssistant,
         Camera: CameraAssistant,
         Terrain: TerrainAssistant,
-        Geometry: GeometryAssistant
+        Geometry: GeometryAssistant,
+        Clock: ClockAssistant
     };
 });
