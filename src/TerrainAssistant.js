@@ -5,7 +5,7 @@ define([
 ], function (Global, TypeCheck, Failure) {
     /**
      * Provides helper functionality for Cesium.js 
-     * @alias CameraAssistant 
+     * @alias TerrainAssistant 
      */
     return {
         _terrainProvider: null,

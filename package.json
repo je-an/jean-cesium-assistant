@@ -1,6 +1,6 @@
 {
   "name": "jean-cesium-assistant",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Provides helper functionality for Cesium.js",
   "main": "dist/jean-cesium-assistant.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "jean-amd": "1.0.3",
     "jean-failure": "^1.0.1",
+    "jean-geo-coordinate-validator": "^1.0.1",
     "jean-merge": "^1.0.0",
     "jean-type-check": "^1.5.2"
   },

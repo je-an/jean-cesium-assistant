@@ -25,9 +25,11 @@
         TerrainAssistant: "src/TerrainAssistant",
         GeometryAssistant: "src/GeometryAssistant",
         ClockAssistant: "src/ClockAssistant",
+        SamplerAssistant: "src/SamplerAssistant",
         GeometryUtil: "src/GeometryUtil",
         TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
         Failure: "node_modules/jean-failure/src/Failure",
-        Merge: "node_modules/jean-merge/src/Merge"
+        Merge: "node_modules/jean-merge/src/Merge",
+        GeoCoordinateValidator: "node_modules/jean-geo-coordinate-validator/src/GeoCoordinateValidator"
     }
 })
