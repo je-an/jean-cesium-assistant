@@ -45,7 +45,7 @@ define([
             },
             /** */
             _setDefault: function (url) {
-                var provider = new Cesium.createTileMapServiceImageryProvider({
+                var provider = new Cesium.TileMapServiceImageryProvider({
                     url: url + "/Assets/Textures/NaturalEarthII",
                     maximumLevel: 2
                 });
